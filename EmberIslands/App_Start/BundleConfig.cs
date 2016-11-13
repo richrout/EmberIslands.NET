@@ -13,7 +13,9 @@ namespace EmberIslands
                 "~/Scripts/bootstrap.js",
                 "~/Scripts/respond.js",
                 "~/Scripts/jquery.validate*",
-                "~/Scripts/jquery-{version}.js"));
+                "~/Scripts/jquery-{version}.js",
+                "~/Scripts/myapp/dist/assets/vendor.js",
+                "~/Scripts/myapp/dist/assets/myapp.js"));
 
             bundles.Add(new StyleBundle("~/Content/css").Include(
                       "~/Content/bootstrap.css",
