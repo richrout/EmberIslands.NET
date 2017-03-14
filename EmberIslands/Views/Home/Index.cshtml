@@ -29,16 +29,8 @@
             expandedText = "Aliquam eu enim quis nibh pellentesque cursus. Suspendisse aliquet sem dui, et molestie velit feugiat ac. In tincidunt pellentesque condimentum. Praesent tellus risus, interdum sit amet rhoncus id, efficitur nec elit. Duis consectetur convallis risus sed dignissim. In fermentum euismod lorem sit amet dapibus. Quisque varius sem sit amet bibendum scelerisque."
         };
     }
-    <div class="col-md-4">
-        <h2>@gettingStarted.title</h2>
-        <p>
-            @gettingStarted.previewText
-        </p>
-        <p style="display: none;" id="get-started-extra">
-            @gettingStarted.expandedText
-        </p>
-        <p><button class="btn btn-link" onclick="$('#get-started-extra').toggle()">Read more</button></p>
-    </div>
+
+    <div data-component="read-more-paragraph" data-attrs="@Json.Encode(gettingStarted)"></div>
     <div class="col-md-4">
         <h2>@getMore.title</h2>
         <p>
